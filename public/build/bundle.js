@@ -3851,28 +3851,28 @@ var app = (function () {
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "class", "svelte-1lf5ubu");
     			add_location(a1, file, 15, 2, 355);
-    			attr_dev(a2, "href", "/flashcards");
+    			attr_dev(a2, "href", "/#/flashcards");
     			attr_dev(a2, "class", "svelte-1lf5ubu");
     			add_location(a2, file, 16, 2, 379);
-    			attr_dev(a3, "href", "/resources");
+    			attr_dev(a3, "href", "/#/resources");
     			attr_dev(a3, "class", "svelte-1lf5ubu");
-    			add_location(a3, file, 17, 2, 418);
+    			add_location(a3, file, 17, 2, 420);
     			attr_dev(nav, "class", "svelte-1lf5ubu");
     			add_location(nav, file, 14, 1, 347);
     			if (!src_url_equal(img1.src, img1_src_value = "/black.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "black-gisci");
     			attr_dev(img1, "class", "svelte-1lf5ubu");
-    			add_location(img1, file, 23, 3, 524);
+    			add_location(img1, file, 23, 3, 528);
     			attr_dev(a4, "href", "https://www.gisci.org");
     			attr_dev(a4, "class", "svelte-1lf5ubu");
-    			add_location(a4, file, 22, 2, 488);
+    			add_location(a4, file, 22, 2, 492);
     			attr_dev(div1, "class", "corner svelte-1lf5ubu");
-    			add_location(div1, file, 21, 1, 465);
+    			add_location(div1, file, 21, 1, 469);
     			attr_dev(header, "class", "svelte-1lf5ubu");
     			add_location(header, file, 8, 0, 209);
-    			add_location(h10, file, 28, 0, 593);
-    			add_location(p, file, 29, 0, 640);
-    			add_location(h11, file, 30, 0, 732);
+    			add_location(h10, file, 28, 0, 597);
+    			add_location(p, file, 29, 0, 644);
+    			add_location(h11, file, 30, 0, 736);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
