@@ -13,9 +13,9 @@
 		</a>
 	</div>
 	<nav>
-		<a  href="/">Home</a>
-		<a href="/#/flashcards">Flashcards</a>
-		<a href="/#/resources">Resources</a>
+		<a  href="/gisp">Home</a>
+		<a href="/gisp/flashcards">Flashcards</a>
+		<a href="/gisp/resources">Resources</a>
 	</nav>
 	
 
@@ -30,9 +30,9 @@
 <p>Resources include links to study guide pdf's, videos's, and flashcards to play with.</p>
 <h1>GOOD LUCK!</h1>
 <Router routes={{
-	'/': Home,
-	'/flashcards': Flashcards,
-	'/resources': Resources
+	'/gisp': Home,
+	'/gisp/flashcards': Flashcards,
+	'/gisp/resources': Resources
 }} />
 
 
