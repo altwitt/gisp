@@ -48,6 +48,9 @@ var app = (function () {
         const unsub = store.subscribe(...callbacks);
         return unsub.unsubscribe ? () => unsub.unsubscribe() : unsub;
     }
+    function action_destroyer(action_result) {
+        return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
+    }
     function append(target, node) {
         target.appendChild(node);
     }
@@ -3796,6 +3799,8 @@ var app = (function () {
     	let t13;
     	let router;
     	let current;
+    	let mounted;
+    	let dispose;
 
     	router = new Router({
     			props: {
@@ -3848,31 +3853,31 @@ var app = (function () {
     			add_location(a0, file, 10, 2, 242);
     			attr_dev(div0, "class", "corner svelte-1lf5ubu");
     			add_location(div0, file, 9, 1, 219);
-    			attr_dev(a1, "href", "#/");
+    			attr_dev(a1, "href", "/");
     			attr_dev(a1, "class", "svelte-1lf5ubu");
     			add_location(a1, file, 15, 2, 355);
-    			attr_dev(a2, "href", "#/flashcards");
+    			attr_dev(a2, "href", "/flashcards");
     			attr_dev(a2, "class", "svelte-1lf5ubu");
-    			add_location(a2, file, 16, 2, 380);
-    			attr_dev(a3, "href", "#/resources");
+    			add_location(a2, file, 16, 2, 388);
+    			attr_dev(a3, "href", "/resources");
     			attr_dev(a3, "class", "svelte-1lf5ubu");
-    			add_location(a3, file, 17, 2, 420);
+    			add_location(a3, file, 17, 2, 436);
     			attr_dev(nav, "class", "svelte-1lf5ubu");
     			add_location(nav, file, 14, 1, 347);
     			if (!src_url_equal(img1.src, img1_src_value = "/black.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "black-gisci");
     			attr_dev(img1, "class", "svelte-1lf5ubu");
-    			add_location(img1, file, 23, 3, 527);
+    			add_location(img1, file, 23, 3, 550);
     			attr_dev(a4, "href", "https://www.gisci.org");
     			attr_dev(a4, "class", "svelte-1lf5ubu");
-    			add_location(a4, file, 22, 2, 491);
+    			add_location(a4, file, 22, 2, 514);
     			attr_dev(div1, "class", "corner svelte-1lf5ubu");
-    			add_location(div1, file, 21, 1, 468);
+    			add_location(div1, file, 21, 1, 491);
     			attr_dev(header, "class", "svelte-1lf5ubu");
     			add_location(header, file, 8, 0, 209);
-    			add_location(h10, file, 28, 0, 596);
-    			add_location(p, file, 29, 0, 643);
-    			add_location(h11, file, 30, 0, 735);
+    			add_location(h10, file, 28, 0, 619);
+    			add_location(p, file, 29, 0, 666);
+    			add_location(h11, file, 30, 0, 758);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3902,6 +3907,16 @@ var app = (function () {
     			insert_dev(target, t13, anchor);
     			mount_component(router, target, anchor);
     			current = true;
+
+    			if (!mounted) {
+    				dispose = [
+    					action_destroyer(link.call(null, a1)),
+    					action_destroyer(link.call(null, a2)),
+    					action_destroyer(link.call(null, a3))
+    				];
+
+    				mounted = true;
+    			}
     		},
     		p: noop,
     		i: function intro(local) {
@@ -3923,6 +3938,8 @@ var app = (function () {
     			if (detaching) detach_dev(h11);
     			if (detaching) detach_dev(t13);
     			destroy_component(router, detaching);
+    			mounted = false;
+    			run_all(dispose);
     		}
     	};
 
