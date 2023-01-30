@@ -13,9 +13,9 @@
 		</a>
 	</div>
 	<nav>
-		<a  href="#/">Home</a>
-		<a href="#/flashcards">Flashcards</a>
-		<a href="#/resources">Resources</a>
+		<a  href="/" use:link>Home</a>
+		<a href="/flashcards" use:link>Flashcards</a>
+		<a href="/resources"use:link>Resources</a>
 	</nav>
 	
 
