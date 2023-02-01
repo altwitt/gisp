@@ -10,6 +10,9 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "@smui/button": "^7.0.0-beta.0",
+    "@smui/drawer": "^7.0.0-beta.0",
+    "@smui/list": "^7.0.0-beta.0",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-livereload": "^2.0.0",
@@ -18,6 +21,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@smui-extra/accordion": "^7.0.0-beta.0",
     "sirv-cli": "^2.0.0",
     "svelte-spa-router": "^3.3.0"
   },

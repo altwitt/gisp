@@ -1,6 +1,6 @@
 <script>
     // @ts-nocheck
-        import { quiz, chapters } from "./quizSectioned.js";
+        import { quiz, chapters } from "./data.js";
         import Cardbox from './Cardbox.svelte';
        
         
@@ -17,7 +17,7 @@
             // $: selected = chapters[selected-1].id;
             let showCardBack = false;	
             const toggleShowBack = () => showCardBack = !showCardBack;
-            $: console.log(selected);
+        
             const prevCard = () => {
                 showCardBack = false;
                 if (flashcardIndex === 0) {

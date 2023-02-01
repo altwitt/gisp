@@ -1,15 +1,21 @@
 <script>
 	import Router, {location, link} from 'svelte-spa-router';
+	
+   
+
 	import Home from './Home.svelte';
 	import Flashcards from './Flashcards.svelte';
 	import Resources from './Resources.svelte';
 	
+   
+  
+    
 	
 </script>
 <header>
 	<div class="corner">
 		<a href="https://www.gisci.org/Exam-Info">
-			<img src="/black.png" alt="black-gisci" />
+			<img src="https://gist.github.com/altwitt/79ee75e012b7ce486221de3affa319ec#file-white-svg" alt="white-globe" />
 		</a>
 	</div>
 	<nav>
@@ -21,7 +27,7 @@
 
 	<div class="corner">
 		<a href="https://www.gisci.org">
-			<img src="/black.png" alt="black-gisci" />
+			<img src="https://gist.github.com/altwitt/79ee75e012b7ce486221de3affa319ec#file-white-svg" alt="white-globe" />
 		</a>
 	</div>
 </header>
