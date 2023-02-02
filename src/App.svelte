@@ -15,7 +15,7 @@
 <header>
 	<div class="corner">
 		<a href="https://www.gisci.org/Exam-Info">
-			<img src="https://altwitt.github.io/gisp/blob/main/public/black.png" alt="black" />
+			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
 		</a>
 	</div>
 	<nav>
@@ -27,7 +27,7 @@
 
 	<div class="corner">
 		<a href="https://www.gisci.org">
-			<img src="https://altwitt.github.io/gisp/blob/main/public/black.png" alt="black" />
+			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
 		</a>
 	</div>
 </header>
@@ -40,7 +40,30 @@
 	'/flashcards': Flashcards,
 	'/resources': Resources
 }} />
-
+<footer>
+	<div class="corner">
+		<a href="https://www.gisci.org/Exam-Info">
+			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
+		</a>
+	</div>
+	
+	<div >
+		<nav class="footer-nav">
+		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/">GISCI Home Page</a>
+	<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/About-Us/Contact-Us">About Us</a>
+	<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Ethics/Code-of-Ethics">Ethics</a>
+	<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/News/Issues-News-Policy">News</a>
+	</nav>
+		<!-- <p>701 Lee Street, Suite 960, Des Plaines, IL 60016  |  Phone (847) 824-7768  |  Fax (224) 938-9237</p> -->
+	
+	
+</div>
+	<div class="corner">
+		<a href="https://www.gisci.org">
+			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
+		</a>
+	</div>
+</footer>
 
 
 <style>
@@ -48,8 +71,29 @@ header {
 	display: flex;
 	justify-content: space-between;
 	background-image: linear-gradient(180deg, #435d7d, #5d6f87);
+	z-index: -1;
 }
 
+footer {
+	display: flex;
+	justify-content: space-between;
+	background-image: linear-gradient(180deg, #435d7d, #5d6f87);
+	position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer_nav {
+	display: flex;
+	justify-content: center;
+	--background: rgba(255, 255, 255, 0.7);
+	padding: 0 0.5rem;
+		margin: 30px 30px;
+		color: var(--color-text);
+		font-weight: 700;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+}
 .corner {
 	width: 100px;
 	height: 100px;
@@ -66,7 +110,7 @@ header {
 .corner img {
 	width: 100px;
 	height: 100px;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 nav {
@@ -74,22 +118,31 @@ nav {
 	justify-content: center;
 	--background: rgba(255, 255, 255, 0.7);
 }
-
+p {
+	color:rgb(231, 240, 243);
+	float: left;
+}
 nav a {
 		display: flex;
-		height: 100%;
+		height: 50%;
 		align-items: center;
 		padding: 0 0.5rem;
+		margin: 30px 30px;
 		color: var(--color-text);
 		font-weight: 700;
-		font-size: 0.8rem;
+		font-size: 1.8rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
-		transition: color 0.2s linear;
+		
+  -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color 2s ease-out;
+  transition: color 2s ease-out;
 	}
-
-	a:hover {
-		color: var(--color-theme-1);
+ 	a:hover {
+		color: white;
+		
+	
 	}
 </style>
