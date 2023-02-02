@@ -15,7 +15,7 @@
 <header>
 	<div class="corner">
 		<a href="https://www.gisci.org/Exam-Info">
-			<img src="https://gist.github.com/altwitt/79ee75e012b7ce486221de3affa319ec#file-white-svg" alt="white-globe" />
+			<img src="https://github.com/altwitt/gisp/blob/main/public/black.png" alt="black" />
 		</a>
 	</div>
 	<nav>
@@ -27,14 +27,14 @@
 
 	<div class="corner">
 		<a href="https://www.gisci.org">
-			<img src="https://gist.github.com/altwitt/79ee75e012b7ce486221de3affa319ec#file-white-svg" alt="white-globe" />
+			<img src="https://github.com/altwitt/gisp/blob/main/public/black.png" alt="black" />
 		</a>
 	</div>
 </header>
 
 <h1>Welcome to the GISCI GISP Study guide</h1>
-<p>Resources include links to study guide pdf's, videos's, and flashcards to play with.</p>
-<h1>GOOD LUCK!</h1>
+<h2>Resources include links to study guide pdf's, videos's, and flashcards to play with. Good luck on your exam</h2>
+
 <Router routes={{
 	'/': Home,
 	'/flashcards': Flashcards,

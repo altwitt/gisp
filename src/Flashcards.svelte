@@ -38,7 +38,8 @@
         </script>
         <main>
         <section class="flash">
-        <h1 class="header">GISP STUDY GUIDE</h1>
+       
+        <h3>Change the chapter on the left to move to different cards</h3>
         <div class="dropdown">
         <select bind:value={selected} >
             <option value={""} >Choose a chapter</option>
@@ -97,7 +98,9 @@
                 margin:auto;
                 text-align: center;
             }
-      
+      h3{
+        margin-bottom: 75px;
+      }
             /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
             .flip-box {
                 background-color: transparent;

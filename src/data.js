@@ -8,8 +8,8 @@ export let chapters = [
   { id: 7, text: `Chapter 7: Database Design and Management` },
 ];
 
-export const resources = {
-  Websites: [
+export const resources = [
+  [
     {
       name: "Direction Magazine Podcast and many other resources",
       link: "https://www.directionsmag.com/article/8411",
@@ -23,7 +23,7 @@ export const resources = {
       link: "https://www.geotechcenter.org/personal-assessment-center.html",
     },
   ],
-  Literature: [
+  [
     {
       name: "Free GIS Fundamentals, 6th Edition book",
       link: "https://www.paulbolstad.net/gisbook.html",
@@ -34,7 +34,7 @@ export const resources = {
     },
   ],
 
-  Downloads: [
+  [
     {
       name: "EXAM BLUEPRINT (2019) REVISED BP CROSSWALK",
       link: "https://www.gisci.org/Portals/0/PDF's/REVISED%20BP%20-%20Official%20-%20July%202019.pdf",
@@ -57,7 +57,7 @@ export const resources = {
     },
   ],
 
-  Media: [
+  [
     {
       name: "Getting started on your GISP",
       link: "https://www.youtube.com/watch?v=maisz8INlt8",
@@ -79,7 +79,7 @@ export const resources = {
       link: "https://mapscaping.com/podcast/how-to-become-a-certified-gis-professional/",
     },
   ],
-};
+];
 
 export const quiz = [
   [
