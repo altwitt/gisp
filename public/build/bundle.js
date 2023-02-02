@@ -4176,7 +4176,7 @@ var app = (function () {
     			h2.textContent = "Resources include links to study guide pdf's, videos's, and flashcards to play with. Good luck on your exam";
     			t11 = space();
     			create_component(router.$$.fragment);
-    			if (!src_url_equal(img0.src, img0_src_value = "https://github.com/altwitt/gisp/blob/main/public/black.png")) attr_dev(img0, "src", img0_src_value);
+    			if (!src_url_equal(img0.src, img0_src_value = "https://altwitt.github.io/gisp/blob/main/public/black.png")) attr_dev(img0, "src", img0_src_value);
     			attr_dev(img0, "alt", "black");
     			attr_dev(img0, "class", "svelte-1lf5ubu");
     			add_location(img0, file, 17, 3, 307);
@@ -4187,28 +4187,28 @@ var app = (function () {
     			add_location(div0, file, 15, 1, 238);
     			attr_dev(a1, "href", "/");
     			attr_dev(a1, "class", "svelte-1lf5ubu");
-    			add_location(a1, file, 21, 2, 416);
+    			add_location(a1, file, 21, 2, 415);
     			attr_dev(a2, "href", "/flashcards");
     			attr_dev(a2, "class", "svelte-1lf5ubu");
-    			add_location(a2, file, 22, 2, 449);
+    			add_location(a2, file, 22, 2, 448);
     			attr_dev(a3, "href", "/resources");
     			attr_dev(a3, "class", "svelte-1lf5ubu");
-    			add_location(a3, file, 23, 2, 497);
+    			add_location(a3, file, 23, 2, 496);
     			attr_dev(nav, "class", "svelte-1lf5ubu");
-    			add_location(nav, file, 20, 1, 408);
-    			if (!src_url_equal(img1.src, img1_src_value = "https://github.com/altwitt/gisp/blob/main/public/black.png")) attr_dev(img1, "src", img1_src_value);
+    			add_location(nav, file, 20, 1, 407);
+    			if (!src_url_equal(img1.src, img1_src_value = "https://altwitt.github.io/gisp/blob/main/public/black.png")) attr_dev(img1, "src", img1_src_value);
     			attr_dev(img1, "alt", "black");
     			attr_dev(img1, "class", "svelte-1lf5ubu");
-    			add_location(img1, file, 29, 3, 611);
+    			add_location(img1, file, 29, 3, 610);
     			attr_dev(a4, "href", "https://www.gisci.org");
     			attr_dev(a4, "class", "svelte-1lf5ubu");
-    			add_location(a4, file, 28, 2, 575);
+    			add_location(a4, file, 28, 2, 574);
     			attr_dev(div1, "class", "corner svelte-1lf5ubu");
-    			add_location(div1, file, 27, 1, 552);
+    			add_location(div1, file, 27, 1, 551);
     			attr_dev(header, "class", "svelte-1lf5ubu");
     			add_location(header, file, 14, 0, 228);
-    			add_location(h1, file, 34, 0, 722);
-    			add_location(h2, file, 35, 0, 769);
+    			add_location(h1, file, 34, 0, 720);
+    			add_location(h2, file, 35, 0, 767);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

@@ -15,7 +15,7 @@
 <header>
 	<div class="corner">
 		<a href="https://www.gisci.org/Exam-Info">
-			<img src="https://github.com/altwitt/gisp/blob/main/public/black.png" alt="black" />
+			<img src="https://altwitt.github.io/gisp/blob/main/public/black.png" alt="black" />
 		</a>
 	</div>
 	<nav>
@@ -27,7 +27,7 @@
 
 	<div class="corner">
 		<a href="https://www.gisci.org">
-			<img src="https://github.com/altwitt/gisp/blob/main/public/black.png" alt="black" />
+			<img src="https://altwitt.github.io/gisp/blob/main/public/black.png" alt="black" />
 		</a>
 	</div>
 </header>
