@@ -21,7 +21,10 @@
 	<nav>
 		<a  href="/" use:link>Home</a>
 		<a href="/flashcards" use:link>Flashcards</a>
-		<a href="/resources"use:link>Resources</a>
+		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/">gisci</a>
+		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/About-Us/Contact-Us">About Gisci</a>
+		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Ethics/Code-of-Ethics">Ethics</a>
+		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/News/Issues-News-Policy">News</a>
 	</nav>
 	
 
@@ -37,8 +40,8 @@
 
 <Router routes={{
 	'/': Home,
-	'/flashcards': Flashcards,
-	'/resources': Resources
+	'/flashcards': Flashcards
+	
 }} />
 <footer>
 	<div class="corner">
@@ -49,12 +52,9 @@
 	
 	<div >
 		<nav class="footer-nav">
-		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/">GISCI Home Page</a>
-	<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/About-Us/Contact-Us">About Us</a>
-	<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Ethics/Code-of-Ethics">Ethics</a>
-	<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/News/Issues-News-Policy">News</a>
+	
 	</nav>
-		<!-- <p>701 Lee Street, Suite 960, Des Plaines, IL 60016  |  Phone (847) 824-7768  |  Fax (224) 938-9237</p> -->
+		<p>701 Lee Street, Suite 960, Des Plaines, IL 60016  |  Phone (847) 824-7768  |  Fax (224) 938-9237</p>
 	
 	
 </div>
@@ -121,6 +121,8 @@ nav {
 p {
 	color:rgb(231, 240, 243);
 	float: left;
+	bottom: 0;
+	margin: 20px 0px;
 }
 nav a {
 		display: flex;
