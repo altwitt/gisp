@@ -1,6 +1,5 @@
 <script>
-	import { page } from '$app/stores';
-	import gisp from '$lib/images/gisp.png';
+
 	import black from '$lib/images/black.png';
 </script>
 

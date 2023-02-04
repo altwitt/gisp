@@ -43,7 +43,7 @@
 	'/flashcards': Flashcards
 	
 }} />
-<p class="title">Your favorite GISP study guide.</p>
+
 <footer>
 	
 	<div class="corner">
@@ -138,11 +138,5 @@ nav a {
 		
 	
 	}
-	.title {
-		padding-left: 100px;
-		font-size: 200%;
-		text-align: center;
-		font-style: italic;
-		color: #435d7d;
-		}
+
 </style>
