@@ -35,34 +35,33 @@
 	</div>
 </header>
 
-<h1>Welcome to the GISCI GISP Study guide</h1>
-<h2>Resources include links to study guide pdf's, videos's, and flashcards to play with. Good luck on your exam</h2>
+
+
 
 <Router routes={{
 	'/': Home,
 	'/flashcards': Flashcards
 	
 }} />
+<p class="title">Your favorite GISP study guide.</p>
 <footer>
+	
 	<div class="corner">
 		<a href="https://www.gisci.org/Exam-Info">
 			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
 		</a>
 	</div>
+
+	<p>701 Lee Street, Suite 960, Des Plaines, IL 60016  |  Phone (847) 824-7768  |  Fax (224) 938-9237</p>
+	<div class="bottom"><h3>Copyright 2022 by GISCI   |  Privacy Statement  |  Terms of Use  |  Connect</h3><a  href="https://twitter.com/GISCI_GISP"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkNl4i69py000RBi17kQ8crU6Mk5ODvMbHEw&usqp=CAU" height=20px  weight=20px alt="twit" /></a><a href="https://www.linkedin.com/groups/132913/"><img src="https://www.pngkit.com/png/detail/14-145502_linkedin-color-icon-linkedin-logo-round-png.png" height=20px weight=20px alt="lin"/></a></div>
 	
-	<div >
-		<nav class="footer-nav">
-	
-	</nav>
-		<p>701 Lee Street, Suite 960, Des Plaines, IL 60016  |  Phone (847) 824-7768  |  Fax (224) 938-9237</p>
-	
-	
-</div>
+
 	<div class="corner">
 		<a href="https://www.gisci.org">
 			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
 		</a>
 	</div>
+
 </footer>
 
 
@@ -82,17 +81,9 @@ footer {
   bottom: 0;
   width: 100%;
 }
-.footer_nav {
-	display: flex;
-	justify-content: center;
-	--background: rgba(255, 255, 255, 0.7);
-	padding: 0 0.5rem;
-		margin: 30px 30px;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 1.8rem;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
+
+.bottom {
+	display:inline-block;
 }
 .corner {
 	width: 100px;
@@ -121,7 +112,7 @@ nav {
 p {
 	color:rgb(231, 240, 243);
 	float: left;
-	bottom: 0;
+	bottom: 20;
 	margin: 20px 0px;
 }
 nav a {
@@ -147,4 +138,11 @@ nav a {
 		
 	
 	}
+	.title {
+		padding-left: 100px;
+		font-size: 200%;
+		text-align: center;
+		font-style: italic;
+		color: #435d7d;
+		}
 </style>
