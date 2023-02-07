@@ -139,4 +139,27 @@ nav a {
 	
 	}
 
+	@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 50%;
+	
+
+  }
+  .corner {
+		display: none;
+}
+nav a{
+	flex:auto;
+	flex-direction: column;
+	padding: 0px 0px;
+		margin: 5px 5px;
+		
+		font-weight: 450;
+		font-size: 0.9rem;
+}
+a{
+	flex:auto;
+	flex-direction: column;
+}
+	}
 </style>

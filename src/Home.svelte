@@ -23,11 +23,11 @@
       <div class="content">
         <h2>Downloads</h2>
         <p>Official gisci.org documents and more</p>
-        <a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Portals/0/PDF's/GISP%20Unofficial%20Study%20Guide%202019%20v2.pdf?ver=hWEX0NspSVz4XcX0FFf3YA%3d%3d">UNOFFICIAL EXAM STUDY GUIDE</a>
-        <a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Portals/0/PDF's/REVISED%20BP%20-%20Official%20-%20July%202019.pdf">EXAM BLUEPRINT (2019) REVISED BP CROSSWALK</a>
-        <a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Portals/0/PDF's/Exam%20Candidate%20Manual%20Word%20June%202022.pdf?ver=EDJzxaULPf3ORUrX_YjxcQ%3d%3d">EXAM CANDIDATE MANUAL</a>
-        <a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Portals/0/PDF's/Exam%20Candidate%20Manual%20Word%20June%202022.pdf?ver=EDJzxaULPf3ORUrX_YjxcQ%3d%3d">TEACHMEGIS PREP COURSE</a>
-        <a target="_blank" rel="noreferrer noopener" href="https://ucgis.memberclicks.net/assets/docs/gist_body_of_knowledge.pdf">GIS&T BODY OF KNOWLEDGE</a>
+        <a href="https://www.gisci.org/Portals/0/PDF's/GISP%20Unofficial%20Study%20Guide%202019%20v2.pdf?ver=hWEX0NspSVz4XcX0FFf3YA%3d%3d">UNOFFICIAL EXAM STUDY GUIDE</a>
+        <a href="https://www.gisci.org/Portals/0/PDF's/REVISED%20BP%20-%20Official%20-%20July%202019.pdf">EXAM BLUEPRINT (2019) REVISED BP CROSSWALK</a>
+        <a href="https://www.gisci.org/Portals/0/PDF's/Exam%20Candidate%20Manual%20Word%20June%202022.pdf?ver=EDJzxaULPf3ORUrX_YjxcQ%3d%3d">EXAM CANDIDATE MANUAL</a>
+        <a href="https://www.gisci.org/Portals/0/PDF's/Exam%20Candidate%20Manual%20Word%20June%202022.pdf?ver=EDJzxaULPf3ORUrX_YjxcQ%3d%3d">TEACHMEGIS PREP COURSE</a>
+        <a href="https://ucgis.memberclicks.net/assets/docs/gist_body_of_knowledge.pdf">GIS&T BODY OF KNOWLEDGE</a>
        
       </div>
     </div>
@@ -40,12 +40,16 @@
         <a target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/watch?v=f4gIfJSwaZw">Why Pursue the GISP Designation - Lunch and Learn</a>
         <a target="_blank" rel="noreferrer noopener" href="https://snhu.adobeconnect.com/_a798560077/p18d75wxkj8/?OWASP_CSRFTOKEN=9349efa6d6e2165ddbd37aa389f54fa3c2d7ef724f9d428d4d3f9446ed5b4db1">GISP - A Student Perspective Webinar (Nov. 18th, 2015, BIll Hodge, GISP</a>
         <a target="_blank" rel="noreferrer noopener" href="https://mapscaping.com/podcast/how-to-become-a-certified-gis-professional/">Mapscaping Podcast: How to Become a Certified GIS Professional</a>
+       
       </div>
+      
     </div>
+    
   </div>
+  <p class="title">Your favorite GISP study guide.</p>
 <style>
   :root {
-    --duration: 700ms;
+    --duration: 1400ms;
     --timing-func: cubic-bezier(0.19, 1, 0.22, 1);
     --font-sans: "Rubik", sans-serif;
     --font-serif: "Cardo", serif;
@@ -70,7 +74,7 @@
   
     /* spacing between cards */
     gap: 1rem;
-  margin-top:100px;
+  margin:140px 30px 10px 70px;
     /* some padding here leaves room for the card's box shadows and
         animations */
     /* padding: 1rem 0; */
@@ -79,7 +83,21 @@
     max-width: 1600px;
     font-family: var(--font-sans);
   }
-  
+
+  .title {
+		padding-left: 100px;
+		font-size: 200%;
+		text-align: center;
+		font-style: italic;
+		color: #435d7d;
+		}
+    
+  p {
+	color:rgb(7, 53, 68);
+	float: left;
+	bottom: 20;
+	margin: 20px 0px;
+}
   .card {
     /* this is a clue that something will be position 
        on top of the card */
@@ -148,16 +166,16 @@
   
   /* add the images to the ::before for each cards */
   .card:nth-child(1)::before {
-    background-image: url(https://picsum.photos/id/1019/400/400);
+    background-image: url(https://www.giscloud.com/assets/wp-content/themes/wp-boomerang/images/Cover-Hero2-s_1644413106.jpg);
   }
   .card:nth-child(2)::before {
-    background-image: url(https://picsum.photos/id/1041/400/400);
+    background-image: url(https://www.esri.com/about/newsroom/wp-content/uploads/2018/06/Arcnews-banner-ArcGISOnline-wide.jpg);
   }
   .card:nth-child(3)::before {
-    background-image: url(https://picsum.photos/id/110/400/400);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2WGbJ-_KZJcjqEKRhEOHry3HCICKnZdFgXQq_YJaVi2Dd_MTshbpVwpt0gPzbk4TbvU8&usqp=CAU);
   }
   .card:nth-child(4)::before {
-    background-image: url(https://picsum.photos/id/172/400/400);
+    background-image: url(https://images.squarespace-cdn.com/content/v1/55223b6ee4b098a11a898a5a/1435180067240-WKD5IXSRC26BOITN9ADJ/Gis-what+we+do.jpg?format=2500w);
   }
   
   .content {
@@ -175,6 +193,7 @@
   .content > * + * {
     /* margin-top: 1rem; */
   }
+  
   
   .cards h2 {
     font-size: 1.3rem;

@@ -94,10 +94,7 @@
                 float: left;
                 padding-right: 30px;
             }
-            .header {
-                margin:auto;
-                text-align: center;
-            }
+        
       h3{
         margin-bottom: 75px;
       }
