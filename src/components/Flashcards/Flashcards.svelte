@@ -1,6 +1,6 @@
 <script>
     // @ts-nocheck
-        import { quiz, chapters } from "./data.js";
+        import { quiz, chapters } from "../../data/data.js";
         import Cardbox from './Cardbox.svelte';
        
         

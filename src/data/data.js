@@ -8,6 +8,518 @@ export let chapters = [
   { id: 7, text: `Chapter 7: Database Design and Management` },
 ];
 
+export const mcExam = {
+  title: "GISP Practice Exam",
+  questions: [
+    {
+      question:
+        "The property of area for a parcel polygon may be considered (Choose the best response)",
+      a: [
+        "A. Precise",
+        "B. Accurate",
+        "C. Legally correct",
+        "D. Both a and b above",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "A vector data model uses which of the following coordinate pair types to build curvature within a line? (Choose the best response)",
+      a: ["A. Vertices", "B. Points", "C. Floating Points", "D. Nodes"],
+      answer: 1,
+    },
+  ],
+};
+export const mcExam1 = {
+  title: "GISP Practice Exam",
+  questions: [
+    {
+      question:
+        "The property of area for a parcel polygon may be considered (Choose the best response)",
+      a: [
+        "A. Precise",
+        "B. Accurate",
+        "C. Legally correct",
+        "D. Both a and b above",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "A vector data model uses which of the following coordinate pair types to build curvature within a line? (Choose the best response)",
+      a: ["A. Vertices", "B. Points", "C. Floating Points", "D. Nodes"],
+      answer: 1,
+    },
+    {
+      question:
+        "GIS differs from surveying and mapping by introducing (Choose the best response)",
+      a: [
+        "A. Attribute descriptions",
+        "B. Spatial analysis",
+        "C. Location determination",
+        "D. Temporal Information",
+      ],
+      answer: 2,
+    },
+    {
+      question: "What is a datum? (Choose the best response)",
+      a: [
+        "A mathematical model",
+        "The mathematical model related to real world features",
+        "Real world features projected with minimum distortion from a round earth to flat map.",
+        "A system of coordinates.",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Which method is used to align an unreferenced dataset with one that has spatial reference information? (Choose the best response)",
+      a: ["Scaling", "Reprojecting", "Georeferencing", "Defining projections"],
+      answer: 3,
+    },
+    {
+      question:
+        "Control points are best described as (Choose the best response)",
+      a: [
+        "Areas on the map where projection can easily change",
+        "Points on the map that do not have a spatial reference",
+        "Points in the data that share the same datum, no matter how the datasets are altered",
+        "Common locations used in aligning two datasets",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "In a map showing contours, the name of the darker contour lines is (Choose the best response)",
+      a: [
+        "A. Index contours",
+        "B. Key contours",
+        "C. Lines of deviation",
+        "D. Lines of Elevations",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Imaginary lines on a map that represent areas of constant elevation are (Choose the best response)",
+      a: ["A. Bands", "B. Contours", "C. Digital line graphs", "D. Collars"],
+      answer: 2,
+    },
+    {
+      question:
+        "The inherent ability to suggest pattern in the phenomena they represent is a fundamental use of (Choose the best response)",
+      a: ["A. Maps", "B. Tables", "C. Layers", "D. Points"],
+      answer: 1,
+    },
+    {
+      question:
+        "If you are making a web map of sampling locations, streams and watershed areas, in what order would you place the layers on the map?",
+      a: [
+        "Sampling locations, wetland areas, streams",
+        "Streams, wetland areas, sampling locations",
+        "Sampling locations, streams, wetland areas",
+        "It doesn’t matter what order they are in",
+      ],
+      answer: 3,
+    },
+    {
+      question: "A small-scale map would show",
+      a: [
+        "A larger geographic area than a large-scale map",
+        "A smaller geographic area than a large-scale map",
+        "The same geographic area as a large-scale map, just at a smaller resolution",
+        "The same geographic area as a large-scale map, just at a larger resolution",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "When mapping sensitive data, what are some techniques that can be used to not reveal details of the data? (Select all that apply)",
+      a: [
+        "Show the data as a heat map",
+        "Show the data as a point layer",
+        "Label the addresses that correspond to the data",
+        "Aggregate the data into quantities using graduated colors, symbols or proportional symbols",
+      ],
+      answer: [1, 4],
+    },
+    {
+      question:
+        "How does using multiple attributes by category make a map more informative?",
+      a: [
+        "It makes the map more colorful",
+        "It provides the reader with multiple layers of information that are easily recognizable on the map",
+        "It shows a high level of expertise has been obtained by the map creator",
+        "Multiple attributes only clutter up a map",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Which of the following data formats would most likely represent a file exported from AutoDesk-AutoCAD?",
+      a: [".SHP", ".DXF", ".TXT", ".LAS"],
+      answer: 2,
+    },
+    {
+      question:
+        "Numerous employees in your organization need access to the streets data that your team is responsible for maintaining in an enterprise database. From the options ivenbelow, what is the best way to handle access to these data? (Choose the best response)",
+      a: [
+        "Set the street layer’s permissions to allow everyone in your enterprise full control",
+        "Set the street layer’s permission to allow full control only to your team",
+        "Set the street layer’s permission to allow full control only to your team and read-only access to the remainder of your enterprise",
+        "Set up a download site for everyone in your enterprise. Direct access to these data will be restricted to your team only.",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "A third-party software system is being stored, distributed and maintained by a county agency that provides access based on a fee charged to each local jurisdiction. What would be the safest and most efficient ways to add a new user? (Select all that apply)",
+      a: [
+        "et anyone sign on as a user as long as they notify the county agency afterward",
+        "Notiy the county agency that you would like to add a user and have them do it",
+        "Requst that the county agency set up an administrator account for your jurisdiction and allow you to have oversight of your users",
+        "Don’t allow new users",
+      ],
+      answer: [2, 3],
+    },
+    {
+      question:
+        "The local county health department has provided data on EMS calls and ER calls in order for a county GIS department to produce maps showing patterns and density fcalls. What restrictions would be involved in using this data? (Choose the best response)",
+      a: [
+        "HIPPA laws",
+        "Fire Safety regulations",
+        "GIS mapping standards",
+        "There are no restrictions",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "What roles are a database administrator expected to fill? (Select all that apply)",
+      a: [
+        "Create database security settings which reflect the needs of the organization",
+        "Create queries for reporting purposes",
+        "Install and configure server hardware",
+        "Backup and Recovery of database",
+      ],
+      answer: [1, 2, 4],
+    },
+    {
+      question:
+        "Several characteristics of GIS services that make it difficult to design GIS web services with satisfactory performance. These include (Select all that apply)",
+      a: [
+        "GIS requires heavy CPU usage",
+        "GIS services sometimes transmit large images",
+        "Clients of GIS services are often complex software packages",
+        "GIS is not scalable to web services",
+      ],
+      answer: [1, 2, 3],
+    },
+    {
+      question:
+        "Leveraging GIS to support an enterprise environment can be best accomplished using which of the following approaches?",
+      a: [
+        "Write-protected shapefiles located on each employee’s workstation",
+        "Geodatabases stored on a centralized server",
+        "Geospatial data served as map services and web maps",
+        "A well-staffed GIS department that is able to response all questions required for the enterprise",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "Which of these types of online information could NOT be referenced in a hyperlink field within a GIS data table?",
+      a: [
+        "Assessment records for parcel polygons",
+        "Precipitation data for rain gage points",
+        "City name for municipal polygons",
+        "Construction project information for roadway lines",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "You have been assigned team lead on the development of a new GIS database for a large county. From the options given below, what is the best approach to this roject",
+      a: [
+        "You and your team should study the county and develop the database for them based on your expert knowledge of GIS",
+        "You and your team should interview end-users at the county to learn how this enterprise functions and then design a database to satisfy their particular needs",
+        "You and your team should acquire a copy of the county’s geospatial data and convert it into the Local Government Information Model (LGIM). Delivery of this nd-produt will setup the county for their long-term needs",
+        "Both a and c are equally correct.",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Object-relational databases have become the cornerstone of modern GIS. These databases can be best described in which of the following ways:",
+      a: [
+        "Each database contains one table and one GIS layer",
+        "The database contains one attribute table for each GIS layer. The attribute table may contain numerous fields (attributes)",
+        "The database will contain many GIS layers, each with an attribute table. The attribute table may contain numerous fields (attributes)",
+        "The database will contain many GIS layers, each with an associated attribute table. In addition, other tables may exist that further describe specific characteristics of the GIS layer and are associated with the GIS layer through a relationship. Each table may contain numerous fields (attributes).",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "One common task faced by the GIS professional is the assurance of data quality and correctness. An example of this is ensuring all County polygons fall within hepolygon of their respective State. This can be accomplished using which of the following workflows?",
+      a: [
+        "Clip the Counties polygon layer with the State polygon layer. Then check if the counties layer changed. If so, it is understood that the Counties layer was larger han te State layer, thus requiring further action.",
+        "Apply a topology rule to the Geodatabase feature dataset containing County and State polygon feature classes and determine if the State feature class is covered by the Counties feature class",
+        "Apply a topology rule to the folder containing County and State shapefiles and determine if the State feature class is covered by the Counties feature class",
+        "Simply sum the area of the Counties layer and State layer. If they agree it is safe to assume they share consistent topology",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "When a GIS dataset for a given project is constantly revised, accessed, and manipulated by multiple users, the best practice approach for storing the data is Choosethe best response)",
+      a: [
+        "Shapefiles",
+        "Personal Geodatabase",
+        "KML files",
+        "Enterprise Geodatabase",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "What technology allows for multiple server instances on a single piece of hardware/single server?",
+      a: [
+        "Open Source",
+        "Remote Desktop",
+        "Virtualization",
+        "Network Attached Storage",
+      ],
+      answer: 3,
+    },
+    {
+      question: "Which of the following is NOT a true relational database?",
+      a: ["SQL Server", "Access", "Oracle", "PostgreSQL"],
+      answer: 2,
+    },
+    {
+      question: "Overlay analysis is based on",
+      a: [
+        "Principal component analysis",
+        "Spatial diffusion",
+        "Graph theory",
+        "Boolean logic",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "What are good reasons to use scale-dependant rendering that changes the source of a dataset to a less detailed and less accurate dataset as the scale of the map smade smaller? (Select all that apply)",
+      a: [
+        "To reduce file size of the digital version of a map",
+        "To make features appear larger than they are",
+        "To reduce cluttered/confusing representations in map products",
+        "To encourage the viewer to overlook important details",
+      ],
+      answer: [1, 3],
+    },
+
+    {
+      question:
+        "Representing features logically in GIS format requires knowledge of GIS primitives. The scale at which a feature is intended to be shown can help define the roperprimitive used to create and display that feature. The best option to represent a feature class for rivers in a State-wide map would be: (Choose the best response)",
+      a: [
+        "Point Feature",
+        "Polygon Feature",
+        "Line Feature",
+        "Multi-patch feature",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "You have been asked to analyze ground water quality for a largely rural American county. During your analysis you learn that septic tank density has a orrelationcoefficient of 0.15 with ground water nitrate concentrations. From these data, you can safely infer",
+      a: [
+        "Septic tanks appear to contribute to the Counties ground water nitrate concerns. However, additional factors are also involved and need to be investigated.",
+        "Septc tanks have increased nitrate concentration by 15%. Therefore, restricting future septic tank installations is important for the counties ground water qualit.",
+        "Septic tanks have increased nitrate concentration by 15%. Therefore, restricting future septic tank installations is important for the counties ground water quality. In addition, the County needs to seriously consider extending existing sewer lines to thereby reduce the number of septic tanks.",
+        "The correlation coefficient of 0.15 is very low and fails to show any correlation between septic tanks and the Counties ground water concerns regarding nitrates.",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "In the world of programming, the most basic skills utilized are",
+      a: [
+        "Scripting",
+        "Tool Modification",
+        "Application Development",
+        "Software Engineering",
+      ],
+      answer: [1, 2],
+    },
+    {
+      question: "Uniform cell size is a description of",
+      a: [
+        "A raster data structure",
+        "A vector data structure",
+        "A point data structure",
+        "A polygon data structure",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "What are good reasons to use scale-dependant rendering that changes the source of a dataset to a less detailed and less accurate dataset as the scale of the map smade smaller?",
+      a: [
+        "To reduce file size of the digital version of a map",
+        "To make features appear larger than they are",
+        "To reduce cluttered/confusing representations in map products",
+        "To encourage the viewer to overlook important details",
+      ],
+      answer: [1, 3],
+    },
+    {
+      question: "π/ 4rad =",
+      a: ["90 degrees", "30 degrees", "60 degrees", "45 degrees"],
+      answer: 4,
+    },
+    {
+      question:
+        "Showing data based on defined parameters is one of the greatest benefits of GIS. Filtering data based on the specific content stored in a field refers to which fthe following: (Choose the best response)",
+      a: [
+        "Attribute query",
+        "Spatial query",
+        "Locational query",
+        "Cartographic query",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "The shapefile format is a digital vector format for storing geometric locations and associated attribute information. While it can consist of several files with ifferentfile name extensions, three file names are needed to be properly identified as a shapefile. These are: (Choose the best response)",
+      a: ["shp, sbn, prj", "shp, shx, dbf", "shp, sbn, dbf", "shp, sbn, sbx"],
+      answer: 2,
+    },
+    {
+      question:
+        "Calculations (sum, average, median, etc.) can’t be performed on this type of field (Choose the best response)",
+      a: ["Character", "Integer", "Floating", "BLOB"],
+      answer: 1,
+    },
+    {
+      question:
+        "When converting Degrees/Minutes/Seconds of latitude in the Northern Hemisphere to decimal degrees (Choose the best response)",
+      a: [
+        "Add the three values together and divide the sum by 3600, i.e., (Deg+Min+Sec)/3600",
+        "Subtract the seconds from the minutes, then the minutes from the degrees i.e. (Deg-(Min-Sec))",
+        "Multiply the Minutes by 60, multiply the seconds by 3600 and then add all to the degrees, i.e., (Deg+(Min60)+(Sec3600))",
+        "Divide the Seconds by 3600, divide the Minutes by 60, then add those values to the degrees, i.e. (Deg+(Min/60)+(Sec/3600))",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "If converting Degrees/Minutes/Seconds of latitude in the Southern Hemisphere to decimal degrees, what would change from question 39? (Choose the best response)",
+      a: [
+        "You would add the derived value to 180",
+        "You would subtract the derived value from 180",
+        "You would multiply the derived value by -1",
+        "You would divide the derived value by -1",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "How would you determine the horizontal accuracy of an ortho-rectified aerial image? (Choose the best response)",
+      a: [
+        "The image is compared to a historic photograph and 90% of the well-known points must match",
+        "Photo-identifiable field points are surveyed and the Root-Mean Square error between the image and the Photo-ID points is computed",
+        "Points are heads-up digitized from the ortho-rectified aerial image and compared to points from GIS layers",
+        "The image is compared to a historic photograph and 90% of the well-known points must match",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "What is the most common statistical method to determine the attribute (land classification) accuracy of a raster- derived land use/land cover map? (Choose the estresponse)",
+      a: [
+        "Use photo-identifiable points for ground truthing and compute a RMSe",
+        "Have multiple technicians compile vector polygons and then do a Union Overlay. The total area of the sliver polygons is the statistical error",
+        "Compute a Confusion Matrix based on ground truthing a stratified random sample of polygons",
+        "Compute the variance in the number of polygons of each land use/land cover class",
+      ],
+      answer: 3,
+    },
+    {
+      question: "The Federal Geographic Data Committee has endorsed",
+      a: [
+        "only the Content Standard for Digital Geospatial Metadata (CSDGM)",
+        "only the ISO 19115 Geospatial Metadata Standard",
+        "only the CSDGM and the ISO 19115 standards",
+        "Have multiple technicians measure football fields end zone to end zone (300 feet) (or other well-known structures) and the standard deviation of those easurements s the accuracy.",
+      ],
+      answer: 4,
+    },
+    {
+      question:
+        "The value of “pulldown” menus in mobile data collection allows for certain data to be added without typing. This valuable input technique allows control of input yntaxand is a proactive part of",
+      a: [
+        "Data filtering",
+        "Quality Assurance",
+        "Cartographic Display",
+        "Big data",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "What are the main reasons for implementing a data archiving system?",
+      a: [
+        "Cost of primary storage",
+        "Ease of access to historical data",
+        "Fast Access to the most important data",
+        "Various data export formats.",
+      ],
+      answer: [1, 2, 3],
+    },
+    {
+      question:
+        "Which of the following is used to extract features and their attributes from one layer using a polygon from another as the boundary of the output?",
+      a: ["Join", "Merge", "Union", "Clip"],
+      answer: 4,
+    },
+    {
+      question:
+        "Which of the following is used to build new features by splitting overlapping features and combing attributes where the features overlap? (Choose the best esponse",
+      a: ["Join", "Merge", "Union", "Clip"],
+      answer: 3,
+    },
+    {
+      question:
+        "Which of the following appends together layers of adjoining area? (Choose the best response)",
+      a: ["Join", "Merge", "Union", "Clip"],
+      answer: 2,
+    },
+    {
+      question:
+        "What are some important considerations when converting hand-drawn features from a hard copy map to digital GIS data? (Select all that apply)",
+      a: [
+        "Colors that will be used to show data in final maps",
+        "Determining which background data shown on the paper maps is the most accurate to use in georeferencing it",
+        "Method the field data collector used to orient themselves",
+        "Ability to understand the notations made and to interpret the attributes for each feature",
+      ],
+      answer: [2, 4],
+    },
+    {
+      question:
+        "When collecting GPS data, what are the most important factors in determining the accuracy of the resulting data? (Select all that apply)",
+      a: [
+        "Using templates or prescribed schemas for feature creation to ensure data quality",
+        "The number of and distance between features collected each day",
+        "The capabilities of the GPS receiver and alignment of GPS satellites at the moment the data is collected",
+        "The battery power of the data collection device",
+      ],
+      answer: [1, 3],
+    },
+  ],
+};
+
 export const resources = [
   [
     {

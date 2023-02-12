@@ -3,9 +3,10 @@
 	
    
 
-	import Home from './Home.svelte';
-	import Flashcards from './Flashcards.svelte';
-	import Resources from './Resources.svelte';
+	import Resources from './components/Resources/Resources.svelte';
+	import Flashcards from './components/Flashcards/Flashcards.svelte';
+	import Exam from './components/Exam/Exam.svelte';
+	
 	
    
   
@@ -18,29 +19,31 @@
 			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
 		</a>
 	</div>
+	
 	<nav>
 		<a  href="/" use:link>Home</a>
 		<a href="/flashcards" use:link>Flashcards</a>
+		<a href="/exam" use:link>Exam</a>
 		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/">gisci</a>
-		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/About-Us/Contact-Us">About Gisci</a>
-		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/Ethics/Code-of-Ethics">Ethics</a>
-		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/News/Issues-News-Policy">News</a>
+		
+		
 	</nav>
-	
+
 
 	<div class="corner">
 		<a href="https://www.gisci.org">
 			<img src="https://www.macurisa.org/resources/Pictures/GISP_Logo.jpeg" alt="black" />
 		</a>
 	</div>
+
 </header>
 
 
 
-
 <Router routes={{
-	'/': Home,
-	'/flashcards': Flashcards
+	'/': Resources,
+	'/flashcards': Flashcards,
+	'/exam': Exam,
 	
 }} />
 
@@ -69,14 +72,15 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	background-image: linear-gradient(180deg, #435d7d, #5d6f87);
-	z-index: -1;
+	/* background: url(/docs/assets/banner.png); */
+	background-color: #4f6680;
+	align-items: flex-end;
 }
 
 footer {
 	display: flex;
 	justify-content: space-between;
-	background-image: linear-gradient(180deg, #435d7d, #5d6f87);
+	background-color: #4f6680;
 	position: absolute;
   bottom: 0;
   width: 100%;
@@ -88,6 +92,7 @@ footer {
 .corner {
 	width: 100px;
 	height: 100px;
+	background-color: #364c65;
 }
 
 .corner a {
@@ -99,15 +104,23 @@ footer {
 }
 
 .corner img {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	object-fit: cover;
 }
+.banner{
+	width:100%;
+	background-color: #4f6680;
+	height: 20%;
+	bottom: 20px;
 
+
+}
 nav {
 	display: flex;
-	justify-content: center;
-	--background: rgba(255, 255, 255, 0.7);
+	
+	
+	background: #4f6680
 }
 p {
 	color:rgb(231, 240, 243);
@@ -119,22 +132,24 @@ nav a {
 		display: flex;
 		height: 50%;
 		align-items: center;
-		padding: 0 0.5rem;
-		margin: 30px 30px;
-		color: var(--color-text);
-		font-weight: 700;
-		font-size: 1.8rem;
+		padding: 10px 4.9rem;
+		margin: 0px 0px;
+		color: white;
+		background-color: #364c65;
+		font-weight: 400;
+		
+		font-size: 1rem;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		
-  -webkit-transition: color 2s ease-out;
-  -moz-transition: color 2s ease-out;
-  -o-transition: color 2s ease-out;
-  transition: color 2s ease-out;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 	}
  	a:hover {
-		color: white;
+		background-color: #6287B2;
 		
 	
 	}
