@@ -5,7 +5,7 @@
 
 	import Resources from './components/Resources/Resources.svelte';
 	import Flashcards from './components/Flashcards/Flashcards.svelte';
-	import Exam from './components/Exam/Exam.svelte';
+	import App from './components/Exam/App.svelte';
 	
 	
    
@@ -13,6 +13,7 @@
     
 	
 </script>
+<body>
 <header>
 	<div class="corner">
 		<a href="https://www.gisci.org/Exam-Info">
@@ -21,7 +22,7 @@
 	</div>
 	
 	<nav>
-		<a  href="/" use:link>Home</a>
+		<a href="/" use:link>Home</a>
 		<a href="/flashcards" use:link>Flashcards</a>
 		<a href="/exam" use:link>Exam</a>
 		<a target="_blank" rel="noreferrer noopener" href="https://www.gisci.org/">gisci</a>
@@ -43,7 +44,7 @@
 <Router routes={{
 	'/': Resources,
 	'/flashcards': Flashcards,
-	'/exam': Exam,
+	'/exam': App,
 	
 }} />
 
@@ -66,12 +67,20 @@
 	</div>
 
 </footer>
-
+</body>
 
 <style>
+	body {
+  display: flex;
+  /* flex-grow: 1; */
+  justify-content: space-between;
+  flex-direction: column;
+	}
+	
 header {
 	display: flex;
 	justify-content: space-between;
+
 	/* background: url(/docs/assets/banner.png); */
 	background-color: #4f6680;
 	align-items: flex-end;
@@ -81,8 +90,8 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	background-color: #4f6680;
-	position: absolute;
-  bottom: 0;
+	position: static;
+  bottom: 0px;
   width: 100%;
 }
 
@@ -108,14 +117,7 @@ footer {
 	height: 80px;
 	object-fit: cover;
 }
-.banner{
-	width:100%;
-	background-color: #4f6680;
-	height: 20%;
-	bottom: 20px;
 
-
-}
 nav {
 	display: flex;
 	
@@ -155,11 +157,7 @@ nav a {
 	}
 
 	@media (max-width: 800px) {
-  .flex-item-right, .flex-item-left {
-    flex: 50%;
-	
-
-  }
+  
   .corner {
 		display: none;
 }

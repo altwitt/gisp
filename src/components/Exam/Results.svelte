@@ -4,7 +4,7 @@
     detailedScore,
     reset,
     scorePercentage,
-  } from "../data/store.js";
+  } from "../../data/store.js";
   import { getDisplayValue, getPercentageColor } from "../utils.js";
   import { fly } from "svelte/transition";
   import { onMount } from "svelte";
@@ -17,17 +17,14 @@
 </script>
 
 <style>
-  h1 {
-    font-size: 1.8em;
-    margin-bottom: 1em;
-  }
+ 
   .final-score {
-    padding-bottom: 1em;
+    padding-bottom: 0.3em;
     margin-bottom: 0;
   }
   .score-scale {
     background: rgba(220, 220, 220, 0.6);
-    border: 3px solid #fff;
+    border: 3px solid #0a0000;
     display: block;
     margin-bottom: 90px;
     position: relative;
@@ -45,36 +42,16 @@
     transition: width 1s;
     transition-delay: 1s;
   }
-  .icon {
-    border: 3px solid #fff;
-    color: #efefef;
-    height: 2em;
-    width: 2em;
-    display: block;
-    text-align: center;
-    line-height: 2em;
-  }
 
-  .correct {
-    background: #008568;
-  }
-  .wrong {
-    background: #6E7783;
-  }
   ul {
     padding: 0;
   }
   li {
     list-style: none;
     display: flex;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
   }
-  li > div:first-of-type {
-    flex: 0 0 3em;
-  }
-  li > div {
-    flex: 1 1 auto;
-  }
+
   li p {
     margin: 0;
     margin-bottom: 1em;
@@ -87,47 +64,44 @@
     text-align: left;
   }
 
-  .followup {
-    font-style: italic;
-    font-size: 0.6em;
-  }
+ 
 </style>
 
-<div
+<div 
   in:fly={{ y: 200, duration: 500, delay: 500 }}
   out:fly={{ y: -200, duration: 500 }}>
-  <h1>Results</h1>
+  
 
   <div>
-    <p class="final-score">Final Score: {percentage}%</p>
+    <h1 class="final-score">Final Score: {percentage}%</h1>
     <div class="score-scale">
       <div
         class="score-bar"
         style="width:{percentage}%; background:{getPercentageColor(percentage)}" />
     </div>
   </div>
-
   {#if $detailedScore != undefined && $detailedScore.length != 0}
-    <ul>
+  <p>Incorrect Answers</p>    
+  <ul>
       {#each $exam as question, index}
-        <li>
+     
+      <li>
           <div>
-            {#if $detailedScore[index].correct}
-              <span class="icon correct">+1</span>
-            {:else}<span class="icon wrong">0</span>{/if}
-          </div>
-          <div>
-            <p>{question.question}</p>
-            <p>{getDisplayValue(question.correctAnswer)}</p>
+           
+            
             {#if !$detailedScore[index].correct}
-              <p>
+            <p>{question.question}</p>  
+            <p>
                 Your Answer:
                 {getDisplayValue($detailedScore[index].chosenAnswer)}
               </p>
-            {/if}
-            {#if question.followup}
-              <p class="followup">{question.followup}</p>
-            {/if}
+              <p>Correct Answer:
+                {getDisplayValue(question.correctAnswer)}</p>
+            
+              
+                {/if}
+            
+            
           </div>
         </li>
       {/each}

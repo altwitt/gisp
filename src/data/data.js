@@ -28,6 +28,34 @@ export const mcExam = {
       a: ["A. Vertices", "B. Points", "C. Floating Points", "D. Nodes"],
       answer: 1,
     },
+    {
+      question:
+        "When mapping sensitive data, what are some techniques that can be used to not reveal details of the data? (Select all that apply)",
+      a: [
+        "Show the data as a heat map",
+        "Show the data as a point layer",
+        "Label the addresses that correspond to the data",
+        "Aggregate the data into quantities using graduated colors, symbols or proportional symbols",
+      ],
+      answer: [1, 4],
+    },
+    {
+      question:
+        "How does using multiple attributes by category make a map more informative?",
+      a: [
+        "It makes the map more colorful",
+        "It provides the reader with multiple layers of information that are easily recognizable on the map",
+        "It shows a high level of expertise has been obtained by the map creator",
+        "Multiple attributes only clutter up a map",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Which of the following data formats would most likely represent a file exported from AutoDesk-AutoCAD?",
+      a: [".SHP", ".DXF", ".TXT", ".LAS"],
+      answer: 2,
+    },
   ],
 };
 export const mcExam1 = {

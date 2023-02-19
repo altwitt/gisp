@@ -11,9 +11,10 @@
     import { fly } from "svelte/transition";
 
     let selectedAnswer;
-
+let examAnswer;
     const onSubmit = () => {
         let correctAnswer = $exam[$currentQuestionIndex].correctAnswer;
+     
         if (correctAnswer === selectedAnswer) {
             score.update((score) => score + 1);
 

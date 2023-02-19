@@ -18,7 +18,7 @@ export const exam = derived(
   hasExamBegun,
   ($hasExamBegun, set) => {
     if ($hasExamBegun) {
-      set(generateExam(get(mcExamQuestions), get(numberOfQuestions)));
+      set(generateExam(get(mcExamQuestions)));
     }
   },
   []
